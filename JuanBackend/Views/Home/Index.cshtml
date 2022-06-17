@@ -129,25 +129,30 @@
             </div>
           </div>
           
-            <div class="col-3">
+            <div class="col-4">
                 <div class="product-banner">
                     <a href="#">
-                        <img src="~/assets/img/banner/banner-3.jpg" alt="product banner">
+                        <img src="~/assets/img/banner/banner-3.jpg" style="margin-left: 57px;" alt="product banner">
                     </a>
                 </div>
             </div>
-          @*  @foreach (var item in Model.sellers)
-           {
-              <div class="col-3">
-                <div class="top-seller-carousel slick-row-15 mtn-30">
+            <div class="container">
+          <div class="row">
+        
+                @foreach (var item in Model.sellers)
+                {
+                    
+                  <div class="col-2">
+                   <div class="shoes" style="margin-left: 426px; margin-top:-378px;">
+                <div class="top-seller-carousel  mtn-30">
                     <div class="slide-item">
                         <div class="pro-item-small mt-30">
                             <div class="product-thumb">
-                                <a href="product-details.html">
-                                    <img src="~/assets/img/product/@item.Image" alt="">
+                                <a href="product-details.html"> 
+                                    <img src="~/assets/img/product/@item.Image"  alt="">
                                 </a>
                             </div>
-                            <div class="pro-small-content">
+                            <div class="pro-small-content"> 
                                 <h6 class="product-name">
                                     <a href="product-details.html">@item.Title</a>
                                 </h6>
@@ -160,15 +165,19 @@
                         </div>
                     </div>
                   
-                   
+                   </div>
                 </div>
-            </div>
-           }*@
+                 </div>
+                
+                }
+           
+        </div>
         </div>
 
-        </div>
       </section>
 
+
+               
 <section>
   <div class="container">
     <div class="row">
