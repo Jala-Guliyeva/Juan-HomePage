@@ -1,0 +1,13 @@
+﻿@model Product 
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Areas/AdminF/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h6>@Model.Title</h6>
+<h5>@Model.Price</h5>
+<h5>@Model.DisCountPrice</h5>
+
+<a asp-controller="Product" asp-action="Index" class="btn btn-dark">Back</a>
+
+

@@ -1,0 +1,228 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Index";
+}
+  <main>
+      <section>
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="~/assets/img/slider/slider-1.jpg" class="d-block w-100" alt="slider1">
+                          <div class="carousel-caption carouseltext d-none d-md-block">
+                            <h5>Top Selling!</h5>
+                            <h1>New Collection</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, quaerat?</p>
+                            <div class="btn  ">
+                              <button type="button" class="btn btnshop btn-light ">Shop Now</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="~/assets/img/slider/slider-2.jpg" class="d-block w-100" alt="slider-2">
+                          <div class="carousel-caption carouseltext d-none d-md-block">
+                            <h5>Best Selling!</h5>
+                            <h1>Top Collection</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="btn  ">
+                              <button type="button" class="btn btnshop btn-light ">Shop Now</button>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            @foreach (var item in Model.services)
+           {
+               <div class="col-4 policy1 policy2 policy3">
+              <div class="service-policy-item mt-30 bg-1">
+                <div class="policy-icon">
+                    <img src="~/assets/img/icon/@item.Image" alt="policy icon">
+                </div>
+                <div class="policy-content">
+                    <h5 class="policy-title">@item.Title</h5>
+                    <p class="policy-desc">@item.Desc</p>
+                </div>
+            </div>
+            </div>
+               
+           }
+            
+          </div>
+        </div>
+      </section>
+      <section>
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                      <div class="section-title text-center">
+                          <h2 class="title">Our Product</h2>
+                          <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                      </div>
+                  </div>
+                   @foreach (var item in Model.products)
+                  {
+                      <div class="col-lg-3 colcard">
+                    <div class="card" style="width: 18rem;">
+                      <img src="~/assets/img/product/@item.Image" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">@item.Title</p>
+                       <span class="price-regular">$@item.Price</span>
+                       <span class="price-old"><del>$@item.DisCountPrice</del></span>
+                      </div>
+                    </div>
+                  </div> 
+                  }
+                    </div>
+                  </div>
+              </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+             @foreach (var item in Model.banners)
+            {
+                <div class="col-6">
+                <div class="image">
+                  <img src="~/assets/img/banner/@item.Image">
+                  <div class="product-text">
+                    <h5>@item.Title</h5>
+                  <h3>@Html.Raw(item.SubTitle)</h3>
+                  
+                  </div>
+                </div>
+              </div> 
+            }
+              
+          </div>
+        </div>
+      </section>
+
+      
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title text-center">
+                <h2 class="title">Top Seller</h2>
+                <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+        </div>
+            </div>
+          </div>
+          
+            <div class="col-3">
+                <div class="product-banner">
+                    <a href="#">
+                        <img src="~/assets/img/banner/banner-3.jpg" alt="product banner">
+                    </a>
+                </div>
+            </div>
+          @*  @foreach (var item in Model.sellers)
+           {
+              <div class="col-3">
+                <div class="top-seller-carousel slick-row-15 mtn-30">
+                    <div class="slide-item">
+                        <div class="pro-item-small mt-30">
+                            <div class="product-thumb">
+                                <a href="product-details.html">
+                                    <img src="~/assets/img/product/@item.Image" alt="">
+                                </a>
+                            </div>
+                            <div class="pro-small-content">
+                                <h6 class="product-name">
+                                    <a href="product-details.html">@item.Title</a>
+                                </h6>
+                                <div class="price-box">
+                                    <span class="price-regular">$@item.Price</span>
+                                    <span class="price-old"><del>$@item.DisCountPrice</del></span>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                  
+                   
+                </div>
+            </div>
+           }*@
+        </div>
+
+        </div>
+      </section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title text-center">
+          <h2 class="title">Our Blog </h2>
+          <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+      </div>
+  </div>
+  @foreach (var item in Model.blogs)
+ {
+     <div class="col-4">
+      <div class="cards" style="width: 18rem;">
+        <img src="~/./assets/img/blog/@item.Image" class="card-img-top" alt="blog1">
+        <div class="card-body">
+          <h5>
+              @item.Desc
+          </h5>
+          <h6 class="card-title">By:@item.Author,On:@item.WriteTime.ToString("dd.mm.yy")</h6>
+          
+         <div class="readmore">
+          <button type="button" class="btn btn-outline">Read More...</button>
+         </div>
+        </div>
+      </div>
+    </div>
+     
+ }
+
+
+  </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+     @foreach (var item in Model.brands)
+    {
+         <div class="col-3  ">
+        <div class="service-policy-item mt-30 bg-1">
+          <div class="policy-icon">
+              <img src="~/assets/img/brand/@item.Image" alt="policy icon">
+          </div>
+         
+      </div>
+      </div>
+    }
+      
+    </div>
+  </div>
+</section>
+
+  </main>
+

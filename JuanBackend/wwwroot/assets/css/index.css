@@ -1,0 +1,262 @@
+/* No CSS */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar-brand {
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  margin-left: 50px;
+  color: black;
+}
+
+.nav-item {
+  margin-left: 50px;
+}
+
+.navul {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.col-3{
+    margin-top:15px;
+}
+.btnshop {
+  border-radius: 30px;
+  padding: 20px;
+  color: black;
+  padding: 18px 44px;
+}
+
+.nav-item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.navimg {
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+.col-2 {
+  margin-left: 5px;
+}
+
+.product-text {
+  margin-top: -200px;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  margin-left: 50px;
+  color: white;
+}
+
+.image {
+  margin-top: 50px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.carousel slide {
+  margin-top: 10px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h5, h1, p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 20px;
+  font-weight: 700px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.col-lg-4 {
+  margin-left: 20px;
+}
+
+.readmore {
+  background-color: #fff;
+}
+
+.policy-icon {
+  margin-top: 50px;
+}
+
+.policy-content {
+  padding-top: -48px;
+  margin-left: 68px;
+}
+
+.policy-title h5 {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.col4 {
+  margin-right: 5px;
+}
+
+.policy1 {
+  background-color: #fcedda;
+  margin-top: 20px;
+}
+
+.policy2 {
+  background-color: #f2fbcb;
+  margin-top: 20px;
+}
+
+.policy3 {
+  background-color: #f7d8f9;
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 12px;
+}
+
+.title {
+  margin-top: 50px;
+}
+
+.sub-title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer-widget-area {
+    background-color: #f0f0f0;
+    margin-top:20px;
+}
+p{
+    display:flex;
+    justify-content:center;
+}
+
+.widget-title {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 20px;
+    padding-bottom: 28px;
+    text-transform: capitalize;
+}
+
+.location-wrap li,
+.useful-link li {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+    .location-wrap li a,
+    .useful-link li a {
+        color: #333333;
+    }
+
+        .location-wrap li a:hover,
+        .useful-link li a:hover {
+            color: #e3a51e;
+            padding-left: 5px;
+        }
+
+    .location-wrap li i,
+    .useful-link li i {
+        font-size: 22px;
+        padding-right: 10px;
+    }
+
+    .location-wrap li:last-child,
+    .useful-link li:last-child {
+        margin-bottom: 0;
+    }
+
+.useful-link li {
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.footer-bottom {
+    background-color: #e4e4e4;
+    padding: 20px 0;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .copyright-text {
+        padding-top: 10px;
+    }
+}
+
+.copyright-text p {
+    font-size: 14px;
+}
+
+    .copyright-text p a {
+        color: #e3a51e;
+    }
+
+.footer-social-link a {
+    color: #666666;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+    .footer-social-link a:hover {
+        color: #e3a51e;
+    }
+
+
+
+/*# sourceMappingURL=index.css.map */

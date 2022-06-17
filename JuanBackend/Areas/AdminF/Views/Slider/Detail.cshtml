@@ -1,0 +1,10 @@
+﻿@model Slider 
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Areas/AdminF/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h6>@Model.SubTitle</h6>
+<h5>@Model.Title</h5>
+<h5>@Model.Description</h5>
+<a asp-controller="Slider" asp-action="Index" class="btn btn-dark">Back</a>

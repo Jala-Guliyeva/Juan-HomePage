@@ -1,0 +1,32 @@
+﻿@model Banner
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/AdminF/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+          <form class="forms-sample" method="post">
+                    <div class="form-group">
+                      <label asp-for="Title"></label>
+                      <input asp-for="Title" class="form-control"  placeholder="Title">
+                      <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                      <div class="form-group">
+                      <label asp-for="SubTitle"></label>
+                      <input asp-for="SubTitle" class="form-control"  placeholder="SubTitle">
+                      <span asp-validation-for="SubTitle" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                      <label asp-for="Image" ></label>
+                      <input  asp-for="Image" class="form-control"  placeholder="Image">
+                       <span asp-validation-for="Image" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Update</button>
+            </form>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_Validation"/>
+   }

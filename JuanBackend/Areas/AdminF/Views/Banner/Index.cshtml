@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Banner>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/AdminF/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+ <div class="row">
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Banner Table</h4>
+                  <a class="btn btn-success" asp-controller="Banner" asp-action="Create" >Create</a> 
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Count</th>
+                          <th>Image</th>
+                          <th>Title</th>
+                          <th>Setting</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                       @foreach (var item in Model)
+                            {
+                                count++;
+
+                           <tr>
+                          <td>@count</td>
+                          <td>
+                              <img src="~/assets/img/banner/@item.Image"/>
+                            
+                          <td>
+                              <td>@item.Title</td>
+                              <a class="btn btn-danger" asp-controller="Banner" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                              <a class="btn btn-primary" asp-controller="Banner" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                              <a class="btn btn-info" asp-controller="Banner" asp-action="Detail" asp-route-id="@item.Id">Detail</a> 
+                          
+                        </tr>
+                          
+                      }
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+

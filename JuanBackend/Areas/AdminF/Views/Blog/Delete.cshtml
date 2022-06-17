@@ -1,0 +1,15 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/AdminF/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h5>@Model.Image</h5>
+<h5>@Model.Author</h5>
+<hp>@Model.Desc</hp>
+<a asp-controller="Blog" asp-action="Index" class="btn btn-dark">Back</a>
+<a asp-controller="Blog" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-dark">Delete</a>
+
+
+

@@ -1,0 +1,33 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/AdminF/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+          <form class="forms-sample" method="post">
+                    <div class="form-group">
+                      <label asp-for="Author"></label>
+                      <input asp-for="Author" class="form-control"  placeholder="Author">
+                      <span asp-validation-for="Author" class="text-danger"></span>
+                    </div>
+                      <div class="form-group">
+                      <label asp-for="Desc"></label>
+                      <input asp-for="Desc" class="form-control"  placeholder="Desc">
+                      <span asp-validation-for="Desc" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                      <label asp-for="WriteTime" ></label>
+                      <input  asp-for="WriteTime" class="form-control"  placeholder="WriteTime">
+                       <span asp-validation-for="WriteTime" class="text-danger"></span>
+                    </div>
+                
+                    <button type="submit" class="btn btn-primary mr-2">Update</button>
+            </form>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_Validation"/>
+   }
